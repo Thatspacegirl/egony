@@ -1,0 +1,91 @@
+{
+  "codebase_version": "v2.1",
+  "robot_type": "video_only_object_tracking",
+  "fps": 30,
+  "total_episodes": 30,
+  "total_frames": 16563,
+  "total_tasks": 22,
+  "total_videos": 30,
+  "total_chunks": 1,
+  "chunks_size": 1000,
+  "splits": {
+    "train": "0:30"
+  },
+  "data_path": "data/chunk-{episode_chunk:03d}/episode_{episode_index:06d}.parquet",
+  "video_path": "videos/chunk-{episode_chunk:03d}/{video_key}/episode_{episode_index:06d}.mp4",
+  "episodes_metadata": "meta/episodes_metadata.jsonl",
+  "cameras": [
+    "back_stereo_camera_left",
+    "front_stereo_camera_left",
+    "left_stereo_camera_left",
+    "right_stereo_camera_left"
+  ],
+  "features": {
+    "observation.images.exo_camera": {
+      "dtype": "video",
+      "shape": [
+        1152,
+        1536,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ],
+      "info": {
+        "video.fps": 30,
+        "video.height": 1152,
+        "video.width": 1536,
+        "video.channels": 3,
+        "video.codec": "h264",
+        "video.pix_fmt": "yuv420p",
+        "video.is_depth_map": false,
+        "has_audio": false
+      },
+      "note": "one static third-person camera per episode; the actual camera (front/back/left/right_stereo_camera_left) is in meta/episodes_metadata.jsonl['camera']"
+    },
+    "timestamp": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "task_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "next.done": {
+      "dtype": "bool",
+      "shape": [
+        1
+      ],
+      "names": null
+    }
+  }
+}
