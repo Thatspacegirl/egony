@@ -1,0 +1,22 @@
+#usda 1.0
+(
+    defaultPrim = "support_surfaces"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "support_surfaces"
+{
+    def Cylinder "object_0" (
+        prepend apiSchemas = ["PhysicsCollisionAPI"]
+    )
+    {
+        uniform token axis = "Z"
+        double height = 0.04
+        color3f[] primvars:displayColor = [(0.87094945, 0.6472412, 0.6805486)]
+        double radius = 0.0466262713583489
+        double3 xformOp:translate = (-0.6703524654049726, 0.7588439489572992, 0.8579249489875762)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+}
+

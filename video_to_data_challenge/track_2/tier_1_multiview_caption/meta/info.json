@@ -1,0 +1,778 @@
+{
+  "camera_calibration": null,
+  "camera_calibration_note": "Not present in the supplied Track 2 source export.",
+  "chunks_size": 1000,
+  "codebase_version": "v2.1",
+  "data_path": "data/chunk-{episode_chunk:03d}/episode_{episode_index:06d}.parquet",
+  "episodes_metadata": "meta/episodes_metadata.jsonl",
+  "features": {
+    "episode_index": {
+      "dtype": "int64",
+      "names": null,
+      "shape": [
+        1
+      ]
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "names": null,
+      "shape": [
+        1
+      ]
+    },
+    "index": {
+      "dtype": "int64",
+      "names": null,
+      "shape": [
+        1
+      ]
+    },
+    "next.done": {
+      "dtype": "bool",
+      "names": null,
+      "shape": [
+        1
+      ]
+    },
+    "observation.human.bone_length_flexibles": {
+      "dtype": "float32",
+      "names": [
+        "bone_length_flexible_000",
+        "bone_length_flexible_001",
+        "bone_length_flexible_002",
+        "bone_length_flexible_003",
+        "bone_length_flexible_004",
+        "bone_length_flexible_005"
+      ],
+      "shape": [
+        6
+      ]
+    },
+    "observation.human.identity_coeffs": {
+      "dtype": "float32",
+      "names": [
+        "identity_000",
+        "identity_001",
+        "identity_002",
+        "identity_003",
+        "identity_004",
+        "identity_005",
+        "identity_006",
+        "identity_007",
+        "identity_008",
+        "identity_009",
+        "identity_010",
+        "identity_011",
+        "identity_012",
+        "identity_013",
+        "identity_014",
+        "identity_015",
+        "identity_016",
+        "identity_017",
+        "identity_018",
+        "identity_019",
+        "identity_020",
+        "identity_021",
+        "identity_022",
+        "identity_023",
+        "identity_024",
+        "identity_025",
+        "identity_026",
+        "identity_027",
+        "identity_028",
+        "identity_029",
+        "identity_030",
+        "identity_031",
+        "identity_032",
+        "identity_033",
+        "identity_034",
+        "identity_035",
+        "identity_036",
+        "identity_037",
+        "identity_038",
+        "identity_039",
+        "identity_040",
+        "identity_041",
+        "identity_042",
+        "identity_043",
+        "identity_044"
+      ],
+      "shape": [
+        45
+      ]
+    },
+    "observation.human.pose": {
+      "dtype": "float32",
+      "names": [
+        "Hips.rx",
+        "Hips.ry",
+        "Hips.rz",
+        "Spine1.rx",
+        "Spine1.ry",
+        "Spine1.rz",
+        "Spine2.rx",
+        "Spine2.ry",
+        "Spine2.rz",
+        "Chest.rx",
+        "Chest.ry",
+        "Chest.rz",
+        "Neck1.rx",
+        "Neck1.ry",
+        "Neck1.rz",
+        "Neck2.rx",
+        "Neck2.ry",
+        "Neck2.rz",
+        "Head.rx",
+        "Head.ry",
+        "Head.rz",
+        "HeadEnd.rx",
+        "HeadEnd.ry",
+        "HeadEnd.rz",
+        "Jaw.rx",
+        "Jaw.ry",
+        "Jaw.rz",
+        "LeftEye.rx",
+        "LeftEye.ry",
+        "LeftEye.rz",
+        "RightEye.rx",
+        "RightEye.ry",
+        "RightEye.rz",
+        "LeftShoulder.rx",
+        "LeftShoulder.ry",
+        "LeftShoulder.rz",
+        "LeftArm.rx",
+        "LeftArm.ry",
+        "LeftArm.rz",
+        "LeftForeArm.rx",
+        "LeftForeArm.ry",
+        "LeftForeArm.rz",
+        "LeftHand.rx",
+        "LeftHand.ry",
+        "LeftHand.rz",
+        "LeftHandThumb1.rx",
+        "LeftHandThumb1.ry",
+        "LeftHandThumb1.rz",
+        "LeftHandThumb2.rx",
+        "LeftHandThumb2.ry",
+        "LeftHandThumb2.rz",
+        "LeftHandThumb3.rx",
+        "LeftHandThumb3.ry",
+        "LeftHandThumb3.rz",
+        "LeftHandThumbEnd.rx",
+        "LeftHandThumbEnd.ry",
+        "LeftHandThumbEnd.rz",
+        "LeftHandIndex1.rx",
+        "LeftHandIndex1.ry",
+        "LeftHandIndex1.rz",
+        "LeftHandIndex2.rx",
+        "LeftHandIndex2.ry",
+        "LeftHandIndex2.rz",
+        "LeftHandIndex3.rx",
+        "LeftHandIndex3.ry",
+        "LeftHandIndex3.rz",
+        "LeftHandIndex4.rx",
+        "LeftHandIndex4.ry",
+        "LeftHandIndex4.rz",
+        "LeftHandIndexEnd.rx",
+        "LeftHandIndexEnd.ry",
+        "LeftHandIndexEnd.rz",
+        "LeftHandMiddle1.rx",
+        "LeftHandMiddle1.ry",
+        "LeftHandMiddle1.rz",
+        "LeftHandMiddle2.rx",
+        "LeftHandMiddle2.ry",
+        "LeftHandMiddle2.rz",
+        "LeftHandMiddle3.rx",
+        "LeftHandMiddle3.ry",
+        "LeftHandMiddle3.rz",
+        "LeftHandMiddle4.rx",
+        "LeftHandMiddle4.ry",
+        "LeftHandMiddle4.rz",
+        "LeftHandMiddleEnd.rx",
+        "LeftHandMiddleEnd.ry",
+        "LeftHandMiddleEnd.rz",
+        "LeftHandRing1.rx",
+        "LeftHandRing1.ry",
+        "LeftHandRing1.rz",
+        "LeftHandRing2.rx",
+        "LeftHandRing2.ry",
+        "LeftHandRing2.rz",
+        "LeftHandRing3.rx",
+        "LeftHandRing3.ry",
+        "LeftHandRing3.rz",
+        "LeftHandRing4.rx",
+        "LeftHandRing4.ry",
+        "LeftHandRing4.rz",
+        "LeftHandRingEnd.rx",
+        "LeftHandRingEnd.ry",
+        "LeftHandRingEnd.rz",
+        "LeftHandPinky1.rx",
+        "LeftHandPinky1.ry",
+        "LeftHandPinky1.rz",
+        "LeftHandPinky2.rx",
+        "LeftHandPinky2.ry",
+        "LeftHandPinky2.rz",
+        "LeftHandPinky3.rx",
+        "LeftHandPinky3.ry",
+        "LeftHandPinky3.rz",
+        "LeftHandPinky4.rx",
+        "LeftHandPinky4.ry",
+        "LeftHandPinky4.rz",
+        "LeftHandPinkyEnd.rx",
+        "LeftHandPinkyEnd.ry",
+        "LeftHandPinkyEnd.rz",
+        "RightShoulder.rx",
+        "RightShoulder.ry",
+        "RightShoulder.rz",
+        "RightArm.rx",
+        "RightArm.ry",
+        "RightArm.rz",
+        "RightForeArm.rx",
+        "RightForeArm.ry",
+        "RightForeArm.rz",
+        "RightHand.rx",
+        "RightHand.ry",
+        "RightHand.rz",
+        "RightHandThumb1.rx",
+        "RightHandThumb1.ry",
+        "RightHandThumb1.rz",
+        "RightHandThumb2.rx",
+        "RightHandThumb2.ry",
+        "RightHandThumb2.rz",
+        "RightHandThumb3.rx",
+        "RightHandThumb3.ry",
+        "RightHandThumb3.rz",
+        "RightHandThumbEnd.rx",
+        "RightHandThumbEnd.ry",
+        "RightHandThumbEnd.rz",
+        "RightHandIndex1.rx",
+        "RightHandIndex1.ry",
+        "RightHandIndex1.rz",
+        "RightHandIndex2.rx",
+        "RightHandIndex2.ry",
+        "RightHandIndex2.rz",
+        "RightHandIndex3.rx",
+        "RightHandIndex3.ry",
+        "RightHandIndex3.rz",
+        "RightHandIndex4.rx",
+        "RightHandIndex4.ry",
+        "RightHandIndex4.rz",
+        "RightHandIndexEnd.rx",
+        "RightHandIndexEnd.ry",
+        "RightHandIndexEnd.rz",
+        "RightHandMiddle1.rx",
+        "RightHandMiddle1.ry",
+        "RightHandMiddle1.rz",
+        "RightHandMiddle2.rx",
+        "RightHandMiddle2.ry",
+        "RightHandMiddle2.rz",
+        "RightHandMiddle3.rx",
+        "RightHandMiddle3.ry",
+        "RightHandMiddle3.rz",
+        "RightHandMiddle4.rx",
+        "RightHandMiddle4.ry",
+        "RightHandMiddle4.rz",
+        "RightHandMiddleEnd.rx",
+        "RightHandMiddleEnd.ry",
+        "RightHandMiddleEnd.rz",
+        "RightHandRing1.rx",
+        "RightHandRing1.ry",
+        "RightHandRing1.rz",
+        "RightHandRing2.rx",
+        "RightHandRing2.ry",
+        "RightHandRing2.rz",
+        "RightHandRing3.rx",
+        "RightHandRing3.ry",
+        "RightHandRing3.rz",
+        "RightHandRing4.rx",
+        "RightHandRing4.ry",
+        "RightHandRing4.rz",
+        "RightHandRingEnd.rx",
+        "RightHandRingEnd.ry",
+        "RightHandRingEnd.rz",
+        "RightHandPinky1.rx",
+        "RightHandPinky1.ry",
+        "RightHandPinky1.rz",
+        "RightHandPinky2.rx",
+        "RightHandPinky2.ry",
+        "RightHandPinky2.rz",
+        "RightHandPinky3.rx",
+        "RightHandPinky3.ry",
+        "RightHandPinky3.rz",
+        "RightHandPinky4.rx",
+        "RightHandPinky4.ry",
+        "RightHandPinky4.rz",
+        "RightHandPinkyEnd.rx",
+        "RightHandPinkyEnd.ry",
+        "RightHandPinkyEnd.rz",
+        "LeftLeg.rx",
+        "LeftLeg.ry",
+        "LeftLeg.rz",
+        "LeftShin.rx",
+        "LeftShin.ry",
+        "LeftShin.rz",
+        "LeftFoot.rx",
+        "LeftFoot.ry",
+        "LeftFoot.rz",
+        "LeftToeBase.rx",
+        "LeftToeBase.ry",
+        "LeftToeBase.rz",
+        "LeftToeEnd.rx",
+        "LeftToeEnd.ry",
+        "LeftToeEnd.rz",
+        "RightLeg.rx",
+        "RightLeg.ry",
+        "RightLeg.rz",
+        "RightShin.rx",
+        "RightShin.ry",
+        "RightShin.rz",
+        "RightFoot.rx",
+        "RightFoot.ry",
+        "RightFoot.rz",
+        "RightToeBase.rx",
+        "RightToeBase.ry",
+        "RightToeBase.rz",
+        "RightToeEnd.rx",
+        "RightToeEnd.ry",
+        "RightToeEnd.rz"
+      ],
+      "shape": [
+        231
+      ]
+    },
+    "observation.human.scale_params": {
+      "dtype": "float32",
+      "names": [
+        "scale_000",
+        "scale_001",
+        "scale_002",
+        "scale_003",
+        "scale_004",
+        "scale_005",
+        "scale_006",
+        "scale_007",
+        "scale_008",
+        "scale_009",
+        "scale_010",
+        "scale_011",
+        "scale_012",
+        "scale_013",
+        "scale_014",
+        "scale_015",
+        "scale_016",
+        "scale_017",
+        "scale_018",
+        "scale_019",
+        "scale_020",
+        "scale_021",
+        "scale_022",
+        "scale_023",
+        "scale_024",
+        "scale_025",
+        "scale_026",
+        "scale_027",
+        "scale_028",
+        "scale_029",
+        "scale_030",
+        "scale_031",
+        "scale_032",
+        "scale_033",
+        "scale_034",
+        "scale_035",
+        "scale_036",
+        "scale_037",
+        "scale_038",
+        "scale_039",
+        "scale_040",
+        "scale_041",
+        "scale_042",
+        "scale_043",
+        "scale_044",
+        "scale_045",
+        "scale_046",
+        "scale_047",
+        "scale_048",
+        "scale_049",
+        "scale_050",
+        "scale_051",
+        "scale_052",
+        "scale_053",
+        "scale_054",
+        "scale_055",
+        "scale_056",
+        "scale_057",
+        "scale_058",
+        "scale_059",
+        "scale_060",
+        "scale_061",
+        "scale_062",
+        "scale_063",
+        "scale_064",
+        "scale_065",
+        "scale_066",
+        "scale_067"
+      ],
+      "shape": [
+        68
+      ]
+    },
+    "observation.human.translation": {
+      "dtype": "float32",
+      "names": [
+        "x",
+        "y",
+        "z"
+      ],
+      "shape": [
+        3
+      ]
+    },
+    "observation.images.exo_camera": {
+      "dtype": "video",
+      "info": {
+        "has_audio": false,
+        "video.channels": 3,
+        "video.codec": "h264",
+        "video.fps": 30,
+        "video.height": 1152,
+        "video.is_depth_map": false,
+        "video.pix_fmt": "yuv420p",
+        "video.width": 1536
+      },
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ],
+      "shape": [
+        1152,
+        1536,
+        3
+      ]
+    },
+    "observation.object.pose": {
+      "dtype": "float32",
+      "names": [
+        "x",
+        "y",
+        "z",
+        "qw",
+        "qx",
+        "qy",
+        "qz"
+      ],
+      "shape": [
+        7
+      ]
+    },
+    "observation.object.visible": {
+      "dtype": "bool",
+      "names": null,
+      "shape": [
+        1
+      ]
+    },
+    "task_index": {
+      "dtype": "int64",
+      "names": null,
+      "shape": [
+        1
+      ]
+    },
+    "timestamp": {
+      "dtype": "float32",
+      "names": null,
+      "shape": [
+        1
+      ]
+    }
+  },
+  "fps": 30,
+  "ground_plane_convention": "ax+by+cz+d=0 in source OpenCV world frame",
+  "ground_plane_path": "ground_plane/{sequence_id}.json",
+  "mesh_path": "mesh/{object_name}/{object_name}.glb",
+  "objects": [
+    {
+      "mesh": "mesh/baseball_bat/baseball_bat.glb",
+      "name": "baseball_bat",
+      "prompt": "baseball_bat."
+    },
+    {
+      "mesh": "mesh/big_black_box/big_black_box.glb",
+      "name": "big_black_box",
+      "prompt": "a big black hard plastic box."
+    },
+    {
+      "mesh": "mesh/big_red_bowl/big_red_bowl.glb",
+      "name": "big_red_bowl",
+      "prompt": "A red plastic bowl."
+    },
+    {
+      "mesh": "mesh/black_platform/black_platform.glb",
+      "name": "black_platform",
+      "prompt": "black plastic platform."
+    },
+    {
+      "mesh": "mesh/blue_easter_basket/blue_easter_basket.glb",
+      "name": "blue_easter_basket",
+      "prompt": "a blue metal easter basket."
+    },
+    {
+      "mesh": "mesh/blue_trash_can/blue_trash_can.glb",
+      "name": "blue_trash_can",
+      "prompt": "a tall blue rectangular trash can."
+    },
+    {
+      "mesh": "mesh/cane/cane.glb",
+      "name": "cane",
+      "prompt": "A black and orange four-legged cane with a curved top handle and a thick padded black grip."
+    },
+    {
+      "mesh": "mesh/contigo_coffee_mug/contigo_coffee_mug.glb",
+      "name": "contigo_coffee_mug",
+      "prompt": "A tall metal cylinder that is slightly narrower at the bottom than the top, with silver ends and a black rubber band around the middle for grip."
+    },
+    {
+      "mesh": "mesh/cyan_water_bottle/cyan_water_bottle.glb",
+      "name": "cyan_water_bottle",
+      "prompt": "big cyan colored water bottle."
+    },
+    {
+      "mesh": "mesh/iron/iron.glb",
+      "name": "iron",
+      "prompt": "An metallic iron with blue accents."
+    },
+    {
+      "mesh": "mesh/light_blue_book/light_blue_book.glb",
+      "name": "light_blue_book",
+      "prompt": "a light blue colored book."
+    },
+    {
+      "mesh": "mesh/monitor/monitor.glb",
+      "name": "monitor",
+      "prompt": "a black computer monitor with a stand."
+    },
+    {
+      "mesh": "mesh/rice_cooker/rice_cooker.glb",
+      "name": "rice_cooker",
+      "prompt": "A white, cylindrical rice cooker."
+    },
+    {
+      "mesh": "mesh/rolling_luggage/rolling_luggage.glb",
+      "name": "rolling_luggage",
+      "prompt": "a black rolling suitcase with the handle extended."
+    },
+    {
+      "mesh": "mesh/round_table/round_table.glb",
+      "name": "round_table",
+      "prompt": "a round oak and white table with wheels."
+    },
+    {
+      "mesh": "mesh/skateboard/skateboard.glb",
+      "name": "skateboard",
+      "prompt": "A black skateboard with colorful wheels."
+    },
+    {
+      "mesh": "mesh/skinny_wood_chair/skinny_wood_chair.glb",
+      "name": "skinny_wood_chair",
+      "prompt": "a wooden chair with skinny legs."
+    },
+    {
+      "mesh": "mesh/snack_box/snack_box.glb",
+      "name": "snack_box",
+      "prompt": "a white box with bags of chips images on it."
+    },
+    {
+      "mesh": "mesh/spray_bottle/spray_bottle.glb",
+      "name": "spray_bottle",
+      "prompt": "a spray bottle with blue liquid inside."
+    },
+    {
+      "mesh": "mesh/squeegee/squeegee.glb",
+      "name": "squeegee",
+      "prompt": "a black and orange squeegee."
+    },
+    {
+      "mesh": "mesh/step_ladder/step_ladder.glb",
+      "name": "step_ladder",
+      "prompt": "a black and blue single step ladder."
+    },
+    {
+      "mesh": "mesh/tall_bar_stool/tall_bar_stool.glb",
+      "name": "tall_bar_stool",
+      "prompt": "a tall brown bar stool."
+    },
+    {
+      "mesh": "mesh/toy_stroller/toy_stroller.glb",
+      "name": "toy_stroller",
+      "prompt": "a small pink doll stroller."
+    },
+    {
+      "mesh": "mesh/traffic_cone/traffic_cone.glb",
+      "name": "traffic_cone",
+      "prompt": "an orange traffic cone with a reflective strip."
+    },
+    {
+      "mesh": "mesh/vacuum/vacuum.glb",
+      "name": "vacuum",
+      "prompt": "a slim red vacuum."
+    },
+    {
+      "mesh": "mesh/watering_can/watering_can.glb",
+      "name": "watering_can",
+      "prompt": "A green toy watering can."
+    },
+    {
+      "mesh": "mesh/wet_floor_sign/wet_floor_sign.glb",
+      "name": "wet_floor_sign",
+      "prompt": "a yellow wet floor sign with orange tape on it."
+    },
+    {
+      "mesh": "mesh/white_desk/white_desk.glb",
+      "name": "white_desk",
+      "prompt": "a medium sized white desk."
+    },
+    {
+      "mesh": "mesh/woven_basket/woven_basket.glb",
+      "name": "woven_basket",
+      "prompt": "a shallow woven basket."
+    }
+  ],
+  "reference_layout": "nvidia/video_to_data_challenge/track_3@f3c2ad6d49ee142b2f3941388996e899fa1f7c27",
+  "robot_type": "soma_x_mhr",
+  "splits": {
+    "train": "0:30"
+  },
+  "support_surface_frame": "g1_retarget_world",
+  "support_surface_path": "support_surface/{sequence_id}_support.usda",
+  "support_surface_units": "metres",
+  "tasks": [
+    {
+      "task": "Walk over to the tall bar stool and using both hands, tip the stool from a face down lying down position back to upright.",
+      "task_index": 0
+    },
+    {
+      "task": "Walk over to the vacuum leaning on the tall bar stool and pick up the vacuum using your left hand and hold the vacuum infront of you and perform side to side vacuum motions. Place it back leaning on the stool when complete.",
+      "task_index": 1
+    },
+    {
+      "task": "Walk over to the blue basket on the round table and pick up the blue basket using your right hand and place the basket in a different area within the bounding area. Then pick up the basket and handover to the left hand and place the blue basket in a different area within the bounding area.",
+      "task_index": 2
+    },
+    {
+      "task": "Walk to the coffee mug on the round table, lift it by the handle with your right hand and set it down, then repeat with your left, alternating a few times before leaving it on the table.",
+      "task_index": 3
+    },
+    {
+      "task": "Walk over to the baseball bat and pick up the baseball bat. Slowly begin to rotate the baseball bat and yourself around the bounding area so that every camera gets a visual of the baseball baat.",
+      "task_index": 4
+    },
+    {
+      "task": "Walk over to the G1 Box and rotate the box around the bounding area.",
+      "task_index": 5
+    },
+    {
+      "task": "Walk over to the monitor on the round table. Using only the base of the monitor, rotate and reposition the monitor around the surface of the table without touching or moving the screen itself. When finished, leave the monitor resting on top of the table.",
+      "task_index": 6
+    },
+    {
+      "task": "Walk over to the iron on the round table and using your right hand in the handle slide it back and forth horizontally on the desk. Stand it up vertically when finished.",
+      "task_index": 7
+    },
+    {
+      "task": "Walk over to the skinny wood chair and push the skinny wood chair into the round table.",
+      "task_index": 8
+    },
+    {
+      "task": "Walk over to the big red bowl on the skinny wood chair and pick up the big red bowl using both hands and proceed to place the big red bowl on the ground in front of the skinny wood chair and then slide the big red bowl underneath the skinny wood chair.",
+      "task_index": 9
+    },
+    {
+      "task": "Walk to the white desk, use both your hands to grasp on the edge of the table closest to you, and lower the desk to the ground.",
+      "task_index": 10
+    },
+    {
+      "task": "Pick up the book from the table and place it on the floor.",
+      "task_index": 11
+    },
+    {
+      "task": "Walk over to the platform on the ground and turn the platform over. Place on the ground when done.",
+      "task_index": 12
+    },
+    {
+      "task": "Walk over to the snack box on the white desk. Put the snack box on the ground and use any foot to push the snack box through the desk. Put the box on the desk when finished.",
+      "task_index": 13
+    },
+    {
+      "task": "\"Walk to the round table and use both hands to lower it onto its side. Flip the table so the wheels are facing upward, then rotate it again onto its side, and continue rotating it until it returns to an upright position.",
+      "task_index": 14
+    },
+    {
+      "task": "Walk to the wet floor sign, pick it up with one hand and hold onto it while walking around for at least 10 seconds, then place it back on the floor.",
+      "task_index": 15
+    },
+    {
+      "task": "Walk to the spray bottle on the white desk, pick up the spray bottle with your left hand and place it on the ground.",
+      "task_index": 16
+    },
+    {
+      "task": "Walk over to the traffic cone on the ground, pick up the cone with both hands and place it on the round table.",
+      "task_index": 17
+    },
+    {
+      "task": "Walk over to the blue trash can and slide the blue trash can side ways.",
+      "task_index": 18
+    },
+    {
+      "task": "Walk over to the cane on the ground and use your right hand to grasp the cane then swing the cane on your side and then proceed to handover the cane to your left hand and perform a swinging motion. Place on the ground when complete.",
+      "task_index": 19
+    },
+    {
+      "task": "Walk toward the rice cooker on the round table and pick up the rice cooker and rotate it clockwise using right hand. Place back on the round table.",
+      "task_index": 20
+    },
+    {
+      "task": "Walk over to the tall bar stool and pull the tall bar stool away from the desk.",
+      "task_index": 21
+    },
+    {
+      "task": "Walk over to the step ladder. Using right hand, drag the step ladder on the floor in the bounding area until end of sequence.",
+      "task_index": 22
+    },
+    {
+      "task": "Walk over to the toy stroller on the ground and use both hands to move the stroller back and forth within the bounding area.",
+      "task_index": 23
+    },
+    {
+      "task": "Walk over to the watering can on the ground and kneel next to the watering can and tip it forward as if pouring using right hand.",
+      "task_index": 24
+    },
+    {
+      "task": "Walk to the cyan water bottle on the round table. Pick up the bottle with your right hand, rotate and hand it over to your left hand. And keep alternating hands while rortating the bottle. Once done, place the bottle back on the round table.",
+      "task_index": 25
+    },
+    {
+      "task": "Walk to the skateboard on the ground. Use your hands to rotate the skateboard on the ground within the bounding area.",
+      "task_index": 26
+    },
+    {
+      "task": "Walk to the woven basket from the ground, pick up the basket with your both hands and place the basket on the white desk.",
+      "task_index": 27
+    },
+    {
+      "task": "Walk over to the squeegee leaning on the tall bar stool and using both hands to pick up the squeegee proceed to hold the squeegee infront of you and perform sweeping motions away you.",
+      "task_index": 28
+    },
+    {
+      "task": "Walk over to the rolling luggage within the bounding area and using your left foot push the rolling luggage. within the bounding area. Step away when complete.",
+      "task_index": 29
+    }
+  ],
+  "total_chunks": 1,
+  "total_episodes": 30,
+  "total_frames": 22990,
+  "total_tasks": 30,
+  "total_videos": 30,
+  "trajectory_variant": "tier_1_multiview_caption",
+  "video_path": "videos/chunk-{episode_chunk:03d}/{video_key}/episode_{episode_index:06d}.mp4"
+}
