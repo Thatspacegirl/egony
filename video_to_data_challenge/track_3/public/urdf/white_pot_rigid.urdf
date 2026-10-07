@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot name="track3_white_pot">
+  <!-- Track 3 supplies no measured physical properties. 0.3 kg is a placeholder mass; COM/inertia are a uniform triangle-surface estimate over the collision mesh. -->
+  <mujoco><compiler balanceinertia="true" discardvisual="false"/></mujoco>
+  <link name="object">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.3"/>
+      <inertia ixx="0.00251588244942732" ixy="0" ixz="0" iyy="0.00207442126000802" iyz="0" izz="0.00118395561321459"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../mesh/white_pot/white_pot.glb" scale="1 1 1"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../mesh/white_pot/white_pot.glb" scale="1 1 1"/></geometry>
+    </collision>
+  </link>
+</robot>

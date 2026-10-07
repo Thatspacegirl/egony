@@ -1,0 +1,186 @@
+{
+    "codebase_version": "v2.1",
+    "robot_type": "vicon_oak",
+    "chunks_size": 1000,
+    "camera_calibration": "meta/camera_calibration.json",
+    "total_episodes": 20,
+    "total_frames": 5246,
+    "total_tasks": 10,
+    "total_videos": 60,
+    "total_chunks": 1,
+    "fps": 20.25411910142744,
+    "splits": {
+        "train": "0:46"
+    },
+    "episode_indices": [0, 2, 11, 12, 13, 18, 21, 22, 23, 24, 26, 27, 31, 39, 40, 41, 42, 43, 44, 45],
+    "data_path": "data/chunk-{episode_chunk:03d}/episode_{episode_index:06d}.parquet",
+    "video_path": "videos/chunk-{episode_chunk:03d}/{video_key}/episode_{episode_index:06d}.mp4",
+    "features": {
+        "observation.images.ego_cam_a": {
+            "dtype": "video",
+            "shape": [
+                1520,
+                2028,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channel"
+            ]
+        },
+        "observation.images.ego_cam_b": {
+            "dtype": "video",
+            "shape": [
+                800,
+                1280,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channel"
+            ]
+        },
+        "observation.images.ego_cam_c": {
+            "dtype": "video",
+            "shape": [
+                800,
+                1280,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channel"
+            ]
+        },
+        "observation.objects": {
+            "dtype": "list",
+            "shape": [
+                "variable"
+            ],
+            "item": {
+                "name": "string",
+                "pose": {
+                    "dtype": "float32",
+                    "shape": [
+                        7
+                    ],
+                    "names": [
+                        "x",
+                        "y",
+                        "z",
+                        "qw",
+                        "qx",
+                        "qy",
+                        "qz"
+                    ]
+                },
+                "visible": "bool"
+            },
+            "note": "objects tracked in this episode; membership is constant within an episode, see the parquet's 'objects' metadata key"
+        },
+        "timestamp": {
+            "dtype": "float32",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "capture_time": {
+            "dtype": "float32",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "frame_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "episode_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "task_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        }
+    },
+    "tasks": [
+        {
+            "task_index": 0,
+            "task": "Pot_with_lid"
+        },
+        {
+            "task_index": 4,
+            "task": "Cup_Stack"
+        },
+        {
+            "task_index": 5,
+            "task": "Cup_In_Dish_Rack"
+        },
+        {
+            "task_index": 7,
+            "task": "Dust_Brush"
+        },
+        {
+            "task_index": 8,
+            "task": "Water_Can_Blue_Cup"
+        },
+        {
+            "task_index": 9,
+            "task": "Planter_Stand"
+        },
+        {
+            "task_index": 10,
+            "task": "Pan_In_Dishrack"
+        },
+        {
+            "task_index": 11,
+            "task": "Brush_Dishrack"
+        },
+        {
+            "task_index": 14,
+            "task": "Dustpan_Solo"
+        },
+        {
+            "task_index": 15,
+            "task": "Pan_Solo"
+        }
+    ],
+    "vicon_subjects": [
+        "beige_cup",
+        "blue_cup",
+        "mini_dust_pan",
+        "mini_sweeper",
+        "plastic_dish_rack",
+        "water_pitcher",
+        "white_pot",
+        "white_pot_lid",
+        "wooden_piece_1",
+        "wooden_piece_2"
+    ],
+    "camera_sockets": [
+        "ego_cam_a",
+        "ego_cam_b",
+        "ego_cam_c"
+    ]
+}

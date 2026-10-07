@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot name="track3_mini_sweeper">
+  <!-- Track 3 supplies no measured physical properties. 0.3 kg is a placeholder mass; COM/inertia are a uniform triangle-surface estimate over the collision mesh. -->
+  <mujoco><compiler balanceinertia="true" discardvisual="false"/></mujoco>
+  <link name="object">
+    <inertial>
+      <origin xyz="-6.85794260093e-07 -0.000439946177606 -0.00192997712481" rpy="0 0 0"/>
+      <mass value="0.3"/>
+      <inertia ixx="0.000687315652095606" ixy="2.42678206213897e-07" ixz="-1.43736548235219e-08" iyy="0.000521548467070607" iyz="-7.75848769040445e-06" izz="0.000191930122499212"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../mesh/mini_sweeper/mini_sweeper_visual.glb" scale="1 1 1"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../mesh/mini_sweeper/mini_sweeper_collision.glb" scale="1 1 1"/></geometry>
+    </collision>
+  </link>
+</robot>

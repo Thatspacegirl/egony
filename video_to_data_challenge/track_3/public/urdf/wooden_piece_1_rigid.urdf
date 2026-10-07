@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot name="track3_wooden_piece_1">
+  <!-- Track 3 supplies no measured physical properties. 0.3 kg is a placeholder mass; COM/inertia are a uniform triangle-surface estimate over the collision mesh. -->
+  <mujoco><compiler balanceinertia="true" discardvisual="false"/></mujoco>
+  <link name="object">
+    <inertial>
+      <origin xyz="-2.48509869619e-05 -0.000612768347099 0.000298243806245" rpy="0 0 0"/>
+      <mass value="0.3"/>
+      <inertia ixx="0.001897671183397" ixy="-6.56146932522588e-08" ixz="2.98911371914297e-07" iyy="0.00149445094774926" iyz="-7.28703872384087e-07" izz="0.000414893434348534"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../mesh/wooden_piece_1/wooden_piece_1_visual.glb" scale="1 1 1"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../mesh/wooden_piece_1/wooden_piece_1_collision.glb" scale="1 1 1"/></geometry>
+    </collision>
+  </link>
+</robot>
