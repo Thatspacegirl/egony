@@ -1,0 +1,256 @@
+{
+ "seed": 20261008,
+ "excluded_track1_ids": [
+  "2026-03-12_16-43-03_white_desk_side_to_side_01",
+  "2026-03-13_11-18-20_white_desk_left_foot_push_04",
+  "2026-03-16_15-04-26_hula_hoop_inside_ground_01",
+  "2026-03-16_15-07-35_hula_hoop_through_01",
+  "2026-04-25_14-46-14_hula_hoop_jump_rope_06",
+  "2026-04-29_14-21-44_white_desk_lower_to_ground_09",
+  "2026-05-29_15-24-23_iron_pick_place_right_left_hand_02",
+  "2026-06-03_18-26-12_big_red_bowl_flip_03",
+  "2026-06-08_15-30-20_big_red_bowl_push_05",
+  "2026-06-08_15-54-40_iron_rotate_mid_air_04",
+  "2026-06-09_11-19-34_big_red_bowl_skinny_wood_chair_05",
+  "2026-06-09_11-34-07_iron_ground_05",
+  "2026-09-10_15-07-44_white_laptop_cart_place_down_01",
+  "2026-09-10_15-36-27_white_laptop_cart_place_down_02",
+  "2026-09-10_15-38-09_white_laptop_cart_push_pull_003",
+  "2026-09-10_15-45-17_paint_roller_table_roll_03",
+  "2026-09-10_15-52-02_pink_foam_roll_tap_03",
+  "2026-09-10_15-57-50_pink_foam_roll_table_001",
+  "2026-09-10_16-02-58_short_wood_stool_sit_rotate_001",
+  "2026-09-10_16-08-39_short_wood_stool_pick_place_02",
+  "2026-09-10_16-14-06_foam_grass_block_rotate_02",
+  "2026-09-11_15-00-57_paint_roller_table_roll_04",
+  "2026-09-11_15-04-48_pink_foam_roll_tap_04",
+  "2026-09-11_15-12-36_foam_grass_block_rotate_04",
+  "2026-09-11_15-27-19_black_pan_wipe_06",
+  "2026-09-11_15-28-23_black_pan_wipe_07",
+  "2026-09-11_15-45-25_paint_roller_table_roll_05",
+  "2026-09-11_15-49-16_short_wood_stool_sit_rotate_05",
+  "2026-09-11_15-53-19_foam_grass_block_pick_place_05",
+  "2026-09-11_15-55-29_black_pan_wipe_08"
+ ],
+ "excluded_track2_ids": [
+  "2026-03-12_15-06-36_spray_bottle_left_desk_ground_02",
+  "2026-03-18_19-36-56_g1_box_rotate_01",
+  "2026-03-20_11-59-57_cyan_water_bottle_rotate_01",
+  "2026-04-24_11-40-52_baseball_bat_rotate_05",
+  "2026-04-24_13-56-58_light_blue_book_pick_place_09",
+  "2026-04-25_17-20-04_black_platform_turn_05",
+  "2026-04-27_11-50-10_contigo_coffee_mug_handle_table_05",
+  "2026-04-29_11-53-57_tall_bar_stool_pull_08",
+  "2026-05-01_11-15-05_woven_basket_ground_desk_10",
+  "2026-05-01_11-36-40_white_desk_lower_to_ground_10",
+  "2026-05-01_17-04-55_traffic_cone_ground_table_02",
+  "2026-05-06_10-00-19_blue_trash_can_drag_sideways_08",
+  "2026-05-06_11-06-15_wet_floor_sign_pick_place_ground_08",
+  "2026-05-18_17-06-21_vacuum_left_lean_02",
+  "2026-05-19_10-19-48_cane_swing_05",
+  "2026-05-19_11-27-07_squeegee_sweep_away_from_you_03_",
+  "2026-05-22_16-52-36_step_ladder_drag_03",
+  "2026-05-28_14-44-09_round_table_flip_08",
+  "2026-05-29_15-20-43_iron_round_table_02",
+  "2026-05-29_15-43-20_watering_can_pour_right_02",
+  "2026-06-01_11-26-44_monitor_rotate_05",
+  "2026-06-02_10-04-42_blue_easter_basket_place_10",
+  "2026-06-03_15-08-03_toy_stroller_back_forth_ground_04",
+  "2026-06-04_14-16-23_tall_bar_stool_tip_up_04",
+  "2026-06-04_16-45-04_big_red_bowl_under_skinny_wood_chair_03",
+  "2026-06-05_15-08-08_skinny_wood_chair_push_10",
+  "2026-06-05_16-05-08_skateboard_rotate_ground_10",
+  "2026-06-05_18-27-40_rolling_luggage_left_foot_push_06",
+  "2026-06-08_16-57-34_rice_cooker_clockwise_04",
+  "2026-06-09_10-19-09_snack_box_desk_through_06"
+ ],
+ "excluded_object_tokens": [
+  "hula_hoop",
+  "big_red_bowl",
+  "iron",
+  "white_desk",
+  "black_pan",
+  "foam_grass_block",
+  "paint_roller",
+  "pink_foam_roll",
+  "short_wood_stool",
+  "white_laptop_cart"
+ ],
+ "sequences": [
+  {
+   "val_index": 0,
+   "sequence_id": "2026-03-16_15-50-01_hatchet_scrape_02",
+   "object": "hatchet",
+   "camera": "front_stereo_camera_left",
+   "n_candidates_for_object": 57
+  },
+  {
+   "val_index": 1,
+   "sequence_id": "2026-03-18_18-00-34_tennis_racket_pick_toss_sign_01",
+   "object": "tennis_racket",
+   "camera": "back_stereo_camera_left",
+   "n_candidates_for_object": 53
+  },
+  {
+   "val_index": 2,
+   "sequence_id": "2026-04-07_16-24-14_electric_drill_toy_push_out_01",
+   "object": "electric_drill_toy",
+   "camera": "back_stereo_camera_left",
+   "n_candidates_for_object": 32
+  },
+  {
+   "val_index": 3,
+   "sequence_id": "2026-04-24_17-13-35_soup_can_rotate_06",
+   "object": "soup_can",
+   "camera": "left_stereo_camera_left",
+   "n_candidates_for_object": 23
+  },
+  {
+   "val_index": 4,
+   "sequence_id": "2026-03-23_18-20-27_corn_can_push_away_01",
+   "object": "corn_can",
+   "camera": "back_stereo_camera_left",
+   "n_candidates_for_object": 51
+  },
+  {
+   "val_index": 5,
+   "sequence_id": "2026-06-09_14-28-56_ceramic_vase_up_07",
+   "object": "ceramic_vase",
+   "camera": "left_stereo_camera_left",
+   "n_candidates_for_object": 50
+  },
+  {
+   "val_index": 6,
+   "sequence_id": "2026-06-02_10-37-13_yoga_block_pick_and_place_right_hand_09",
+   "object": "yoga_block",
+   "camera": "front_stereo_camera_left",
+   "n_candidates_for_object": 84
+  },
+  {
+   "val_index": 7,
+   "sequence_id": "2026-03-11_11-27-31_dumbbell_15lb_squats_04",
+   "object": "dumbbell_15lb",
+   "camera": "left_stereo_camera_left",
+   "n_candidates_for_object": 52
+  },
+  {
+   "val_index": 8,
+   "sequence_id": "2026-06-03_17-58-33_basketball_squat_bounce_03",
+   "object": "basketball",
+   "camera": "front_stereo_camera_left",
+   "n_candidates_for_object": 116
+  },
+  {
+   "val_index": 9,
+   "sequence_id": "2026-05-28_16-36-57_yoga_ball_leg_kicks_07",
+   "object": "yoga_ball",
+   "camera": "right_stereo_camera_left",
+   "n_candidates_for_object": 104
+  },
+  {
+   "val_index": 10,
+   "sequence_id": "2026-05-01_17-14-56_soccer_ball_one_foot_06",
+   "object": "soccer_ball",
+   "camera": "front_stereo_camera_left",
+   "n_candidates_for_object": 68
+  },
+  {
+   "val_index": 11,
+   "sequence_id": "2026-03-13_14-56-30_wooden_crate_pick_bottom_ground_desk_02",
+   "object": "wooden_crate",
+   "camera": "back_stereo_camera_left",
+   "n_candidates_for_object": 137
+  },
+  {
+   "val_index": 12,
+   "sequence_id": "2026-03-31_15-36-42_giant_cardboard_box_hold_over_head_03",
+   "object": "giant_cardboard_box",
+   "camera": "left_stereo_camera_left",
+   "n_candidates_for_object": 111
+  },
+  {
+   "val_index": 13,
+   "sequence_id": "2026-04-04_10-20-09_g1_box_step_up_one_foot_04",
+   "object": "g1_box",
+   "camera": "front_stereo_camera_left",
+   "n_candidates_for_object": 94
+  },
+  {
+   "val_index": 14,
+   "sequence_id": "2026-06-08_09-28-56_keyboard_box_place_against_skinny_wood_chair_07",
+   "object": "keyboard_box",
+   "camera": "left_stereo_camera_left",
+   "n_candidates_for_object": 62
+  },
+  {
+   "val_index": 15,
+   "sequence_id": "2026-05-19_15-53-22_beige_bin_both_hands_round_table_03",
+   "object": "beige_bin",
+   "camera": "right_stereo_camera_left",
+   "n_candidates_for_object": 128
+  },
+  {
+   "val_index": 16,
+   "sequence_id": "2026-06-08_13-10-22_guitar_ground_skinny_chair_06",
+   "object": "guitar",
+   "camera": "front_stereo_camera_left",
+   "n_candidates_for_object": 38
+  },
+  {
+   "val_index": 17,
+   "sequence_id": "2026-06-09_13-19-22_microwave_touch_with_right_hand_05",
+   "object": "microwave",
+   "camera": "right_stereo_camera_left",
+   "n_candidates_for_object": 42
+  },
+  {
+   "val_index": 18,
+   "sequence_id": "2026-06-04_10-56-38_air_purifier_touch_04",
+   "object": "air_purifier",
+   "camera": "left_stereo_camera_left",
+   "n_candidates_for_object": 50
+  },
+  {
+   "val_index": 19,
+   "sequence_id": "2026-04-30_11-23-11_toy_car_roll_on_table_08",
+   "object": "toy_car",
+   "camera": "left_stereo_camera_left",
+   "n_candidates_for_object": 117
+  },
+  {
+   "val_index": 20,
+   "sequence_id": "2026-05-07_14-16-25_toy_airplane_roll_ground_foot_08",
+   "object": "toy_airplane",
+   "camera": "right_stereo_camera_left",
+   "n_candidates_for_object": 110
+  },
+  {
+   "val_index": 21,
+   "sequence_id": "2026-06-02_15-54-52_gray_case_ground_desk_slide_07",
+   "object": "gray_case",
+   "camera": "left_stereo_camera_left",
+   "n_candidates_for_object": 53
+  },
+  {
+   "val_index": 22,
+   "sequence_id": "2026-04-07_13-29-38_big_fish_hook_rotate_02",
+   "object": "big_fish_hook",
+   "camera": "left_stereo_camera_left",
+   "n_candidates_for_object": 72
+  },
+  {
+   "val_index": 23,
+   "sequence_id": "2026-04-30_10-20-13_wooden_sword_handover_06",
+   "object": "wooden_sword",
+   "camera": "right_stereo_camera_left",
+   "n_candidates_for_object": 37
+  },
+  {
+   "val_index": 24,
+   "sequence_id": "2026-05-21_16-43-38_dark_blue_book_drag_01",
+   "object": "dark_blue_book",
+   "camera": "front_stereo_camera_left",
+   "n_candidates_for_object": 62
+  }
+ ]
+}

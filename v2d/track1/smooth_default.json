@@ -1,0 +1,1 @@
+{"lam_root_rot": 1000.0, "lam_root_trans": 30.0, "lam_body": 30.0, "lam_hand": 100.0, "lam_obj_rot": 100.0, "lam_obj_trans": 10.0, "anchor": "none", "lam_anchor": 10.0, "anchor_body": true, "anchor_object": false, "robust": "huber"}

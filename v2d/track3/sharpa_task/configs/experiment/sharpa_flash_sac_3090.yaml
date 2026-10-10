@@ -1,0 +1,37 @@
+# @package _global_
+#
+# Track 3 / RTX 3090 (24 GB) variant of the canonical floating-Sharpa FlashSAC recipe.
+# Use:  train_flash_sac.py --config-dir <this dir's parent> experiment=sharpa_flash_sac_3090 task.parquet=...
+#
+# Differences from experiment/sharpa_flash_sac.yaml (48 GB recipe):
+#   * task.motion_speed 1.0 (MANDATORY for Track 3: the evaluator must emit exactly N = video-frame steps;
+#     the recipe's 0.5 doubles the step count and the packer silently keeps the first half),
+#   * 2048 worlds instead of 4096 and 4 updates/collection instead of 8 (same updates per env step),
+#   * replay 2,097,152 transitions stored as float16 observations instead of 4,194,304 float32
+#     (replay.py stores obs/next_obs in this dtype). Exact ring size from FlashCHORD's replay_memory()
+#     (sharpa_task/replay_budget.py): 2 objects (obs 722) 6.42 GiB vs 24.12 GiB for the recipe;
+#     1 object (obs 504) 4.62 GiB vs 17.12 GiB. Every eval episode has <= 2 objects.
+#   * minimum replay fill 204,800 = 100 collections (recipe: 409,600 = 100 x 4096).
+# Curriculum thresholds are in environment steps, so tracking_250m_mixed_reset is unchanged.
+defaults:
+  - sharpa_flash_sac
+  - _self_
+
+task:
+  motion_speed: 1.0
+
+scene:
+  world_count: 2048
+
+training:
+  total_environment_steps: 250003456 # 2048 x 122072
+  updates_per_collection: 4.0
+  replay:
+    capacity: 2097152
+    minimum_size: 204800
+    observation_storage_dtype: float16
+  checkpoint:
+    save_interval_environment_steps: 10000384 # 2048 x 4883
+
+logging:
+  run_name: sharpa_flash_sac_3090
